@@ -1,8 +1,8 @@
 <template>
   <div class="buttoner">
-    <md-filled-tonal-button>{{ button1 }}</md-filled-tonal-button>
+    <md-filled-tonal-button href="https://blog.hesiy.cn">{{ button1 }}</md-filled-tonal-button>
     &nbsp;
-    <md-outlined-button>{{ button2 }}</md-outlined-button>
+    <md-outlined-button href="https://github.com/FloatSheep" >{{ button2 }}</md-outlined-button>
   </div>
 </template>
 
