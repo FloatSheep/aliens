@@ -6,7 +6,7 @@ This is a homepage project.
 
 ### TL;DR
 
-If you want to use it, you should configure the project: 
+If you want to use it, you should configure the project:
 
 1. Clone the project
 2. Install required dependences
