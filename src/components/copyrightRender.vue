@@ -14,29 +14,26 @@
 </template>
 
 <script>
-import yaml from 'js-yaml';
+import siteConfig from '../../site.config'
 
 export default {
   data() {
     return {
       copyright: '',
-      yamlData: null,
-    };
+      yamlData: null
+    }
   },
   mounted() {
-    this.loadYamlData();
+    this.loadYamlData()
   },
   methods: {
     async loadYamlData() {
       try {
-        const response = await fetch('../../config/config.yaml');
-        const text = await response.text();
-        this.yamlData = yaml.load(text);
-        this.copyright = this.yamlData.copyright;
+        this.copyright = siteConfig.copyright
       } catch (error) {
-        console.error('Failed to load YAML data:', error);
+        console.error('Failed to load YAML data:', error)
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>

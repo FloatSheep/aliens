@@ -1,34 +1,32 @@
 <template>
   <div>
-    <h1 class="text">I'm <span class="name">{{ name }}</span></h1>
-
+    <h1 class="text">
+      I'm <span class="name">{{ name }}</span>
+    </h1>
   </div>
 </template>
 
 <script>
-import yaml from 'js-yaml';
+import siteConfig from '../../site.config'
 
 export default {
   data() {
     return {
       name: '',
-      yamlData: null,
-    };
+      yamlData: null
+    }
   },
   mounted() {
-    this.loadYamlData();
+    this.loadYamlData()
   },
   methods: {
     async loadYamlData() {
       try {
-        const response = await fetch('../../config/config.yaml');
-        const text = await response.text();
-        this.yamlData = yaml.load(text);
-        this.name = this.yamlData.name;
+        this.name = siteConfig.name
       } catch (error) {
-        console.error('Failed to load YAML data:', error);
+        console.error('Failed to load YAML data:', error)
       }
-    },
-  },
-};
+    }
+  }
+}
 </script>
