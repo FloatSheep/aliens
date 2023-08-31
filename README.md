@@ -1,41 +1,16 @@
-# aliens
+## What's this?
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a homepage project.
 
-## Recommended IDE Setup
+## How can I use it?
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### TL;DR
 
-## Customize configuration
+If you want to use it, you should configure the project: 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Clone the project
+2. Install required dependences
+3. Add something to config
+4. Deploy
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Just like this.
