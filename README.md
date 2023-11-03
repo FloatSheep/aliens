@@ -1,3 +1,7 @@
+# Deactivated
+
+There will be a new design to replace it.
+
 ## What's this?
 
 This is a homepage project.
